@@ -3,9 +3,13 @@ package com.sist.game;
 import javax.swing.JPanel;
 import java.awt.event.KeyEvent;
 import java.awt.event.KeyListener;
+import java.util.ArrayList;
 import java.awt.Graphics;
 
 public class MyPanel extends JPanel implements KeyListener{
+	//MyPanel과 Enermy,SpaceShip,Missile은 has a관계 -> 객체들을 멤버변수로 가짐
+	
+	//ArrayList<Enermy> list = new ArrayList<Enermy>();
 	Enermy enermy;
 	SpaceShip spaceship;
 	Missile missile;

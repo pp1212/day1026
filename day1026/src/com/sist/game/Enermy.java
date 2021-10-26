@@ -1,5 +1,7 @@
 package com.sist.game;
 
+import java.util.Random;
+
 public class Enermy extends GraphicObject {
 	
 	//적이 x축으로 움직이는 간격을 위한 변수
@@ -21,16 +23,21 @@ public class Enermy extends GraphicObject {
 		
 		//x좌표를 dx만큼 변경시킴
 		x += dx;
+		Random r = new Random();
+		
 		
 		//만약 왼쪽끝에 도달하면 오른쪽으로 이동시키기 위하여 dx를 양수로 만듬
 		if(x < 0) {
-			dx = +10;
+			//dx = +10;
+			dx = r.nextInt(30);
 		}
 		
 		//만약 오른쪽끝에 도달하면 다시 왼쪽으로 이동시키기 위하여 dx를 음수로 만듬
 		if(x > 500) {
-			dx = -10;
+			//dx = -10;
+			dx = -r.nextInt(30);
 		}
+		
 		
 	}
 }
