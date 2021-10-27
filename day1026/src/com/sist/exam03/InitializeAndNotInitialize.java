@@ -17,7 +17,7 @@ public class InitializeAndNotInitialize {
 		int a = 0;	//0 이라는 값으로 초기화
 		int b;		//변수만 선언했지 아무 값도 담기지 않음,이 상태로는 사용할 수 없음
 		
-		String c = null;	//이것은 null이라고 초기화 된 것임
+		String c = null;	//이것은 null이라고 초기화 된 것임(정수 0으로 초기화처럼)
 		String d;			//변수만 선언했지 아무 값도 담기지 않음,이 상태로는 사용할 수 없음(메소드에게 줄 수 없음)
 		
 		
